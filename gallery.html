@@ -14,12 +14,31 @@
 	</head>
 	<body>
 		<div class="container">
-			<img src="images/1.jpg" alt="" srcset="" />
-			<img src="images/2.jpg" alt="" srcset="" />
-			<img src="images/3.jpg" alt="" srcset="" />
-			<img src="images/4.jpg" alt="" srcset="" />
-			<img src="images/6.jpg" alt="" srcset="" />
-			<img src="images/5.jpg" alt="" srcset="" />
+			<h1>Image gallery</h1>
+			<div class="image-container">
+				<div class="image"><img src="images/1.jpg" alt="" srcset="" /></div>
+				<div class="image"><img src="images/2.jpg" alt="" srcset="" /></div>
+				<div class="image"><img src="images/3.jpg" alt="" srcset="" /></div>
+				<div class="image"><img src="images/4.jpg" alt="" srcset="" /></div>
+				<div class="image"><img src="images/6.jpg" alt="" srcset="" /></div>
+				<div class="image"><img src="images/5.jpg" alt="" srcset="" /></div>
+			</div>
+			<div class="popup-image">
+				<span>&times;</span>
+				<img src="images/1.jpg" alt="" srcset="" />
+			</div>
 		</div>
+		<script>
+			document.querySelectorAll(".image-container img").forEach((image) => {
+				image.onclick = () => {
+					document.querySelector(".popup-image").style.display = "block";
+					document.querySelector(".popup-image img").src =
+						image.getAttribute("src");
+				};
+				document.querySelector(".popup-image span").onclick = () => {
+					document.querySelector(".popup-image").style.display = "none";
+				};
+			});
+		</script>
 	</body>
 </html>
