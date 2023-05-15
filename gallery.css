@@ -8,4 +8,5 @@ img {
 	max-width: 1200px;
 	width: 100%;
 	flex-wrap: wrap;
+	justify-content: center;
 }
