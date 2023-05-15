@@ -11,3 +11,6 @@ img {
 	flex-wrap: wrap;
 	justify-content: center;
 }
+
+img:hover {
+}
