@@ -157,7 +157,6 @@ footer {
 	width: 100vw;
 	font-family: "open sans";
 	/* padding-top: 40px; */
-	color: #fff;
 }
 
 .footer-content {
@@ -171,7 +170,7 @@ footer {
 .footer-content h3 {
 	font-size: 1.3rem;
 	font-weight: 700;
-	color: #000;
+
 	text-transform: uppercase;
 	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
